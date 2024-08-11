@@ -1,0 +1,57 @@
+
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+
+  /* Estilos del contenedor del formulario */
+  .form-container {
+    max-width: 580px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilos de los campos del formulario */
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group select,
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  /* Estilos del botón de envío */
+  .form-group input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .form-group input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }

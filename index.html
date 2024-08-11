@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Tarjeta de Desición</title>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Tarjeta de Desición</h2>
+    <form method="POST" action="/" id="form"> <!-- ACLARAR -->
+        <div class="form-group">
+            <label for="id">Consejero ID</label>
+            <input type="text" id="id" name="id" required>
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" required>
+        </div>
+        <div class="form-group">
+            <label for="sexo">Sexo</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="asiste_a_alguna_iglesia">¿Asiste a alguna iglesia?</label>
+            <select id="asiste_a_alguna_iglesia" name="asiste_a_alguna_iglesia" required>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="iglesia">Iglesia</label>
+            <input type="text" id="iglesia" name="iglesia">
+        </div>
+        <div class="form-group">
+            <label for="paso_al_frente_por">Paso al frente por</label>
+            <input type="text" id="paso_al_frente_por" name="paso_al_frente_por">
+        </div>
+        <div class="form-group">
+            <label for="quiere_que_oremos_por_algo">¿Quiere que oremos por algo?</label>
+            <input type="text" id="quiere_que_oremos_por_algo" name="quiere_que_oremos_por_algo">
+        </div>
+        <div class="form-group">
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" name="celular">
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion">
+        </div>
+        <div class="form-group">
+            <div>
+                <label>¿Qué días de la semana se lo/la puede visitar?</label>
+                <label>
+                  Lunes
+                  <input type="checkbox" name="que_dias_se_le_puede_visitar[]" value="lunes">
+                </label>
+                <label>
+                  Martes
+                  <input type="checkbox" name="que_dias_se_le_puede_visitar[]" value="martes">
+                </label>
+                <label>
+                  Miércoles
+                  <input type="checkbox" name="que_dias_se_le_puede_visitar[]" value="miércoles">
+                </label>
+                <label>
+                  Jueves
+                  <input type="checkbox" name="que_dias_se_le_puede_visitar[]" value="jueves">
+                </label>
+                <label>
+                  Viernes
+                  <input type="checkbox" name="que_dias_se_le_puede_visitar[]" value="viernes">
+                </label>
+                <label>
+                  Sábado
+                  <input type="checkbox" name="que_dias_se_le_puede_visitar[]" value="sábado">
+                </label>
+                <label>
+                  Domingo
+                  <input type="checkbox" name="que_dias_se_le_puede_visitar[]" value="domingo">
+                </label>
+              </div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
+<!-- https://driverjs.com/docs/installation -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="index.js"></script>
+<!-- https://console.firebase.google.com/u/0/project/encarnacion-jesus-te-ama/overview?hl=es-419 -->
+</body>
+</html>
